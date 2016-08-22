@@ -1,0 +1,21 @@
+// Example IDL file for our person's schema.
+
+namespace Demo.Person;
+
+enum Department:byte { RnD = 0, Product, Finance = 2 }
+
+table Person {
+  firstName:string;
+  lastName:string;
+  age:short;
+  company:Company;
+  department:Department = RnD;
+}
+
+table Company {
+  companyName:string;
+  companyStreetName:string;
+  streetNumber:short;
+}
+
+root_type Person;

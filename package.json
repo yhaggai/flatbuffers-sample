@@ -1,0 +1,11 @@
+{
+  "name": "flatbuffer-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "flatc": "./flatc --js -o ./output ./sample/person.idl"
+  },
+  "author": "",
+  "license": "ISC"
+}
